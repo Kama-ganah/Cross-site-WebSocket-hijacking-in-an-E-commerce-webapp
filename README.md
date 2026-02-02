@@ -1,7 +1,7 @@
 # Overview
-As a penetration tester, I assessed the application’s WebSocket implementation to evaluate whether authenticated chat sessions could be hijacked from a cross-site context. During testing, I identified that the WebSocket handshake lacked origin validation and CSRF protections. By crafting a malicious webpage, I was able to initiate a WebSocket connection on behalf of an authenticated victim, retrieve their chat history, and extract sensitive credentials. This project demonstrates how insecure WebSocket configurations can be exploited to achieve full account takeover without additional user interaction.
+I assessed the application’s WebSocket implementation to evaluate whether authenticated chat sessions could be hijacked from a cross-site context. During testing, I identified that the WebSocket handshake lacked origin validation and CSRF protections. By crafting a malicious webpage, I was able to initiate a WebSocket connection on behalf of an authenticated victim, retrieve their chat history, and extract sensitive credentials. This project demonstrates how insecure WebSocket configurations can be exploited to achieve full account takeover without additional user interaction.
 
-# Steps Undertaken
+# Methodology
 
 Step 1: Analyzed the live chat WebSocket communication using Burp Suite.
 
